@@ -31,7 +31,4 @@ git push -u --force origin master
 
 # Table of Contents
 
-Tables  | Do Not  |  Seem
---|---|--
- To  |  Work  |  In
- Redcarpet | Markdown  |  :-(
+[TOC]
