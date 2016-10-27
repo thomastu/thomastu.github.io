@@ -1,0 +1,9 @@
+<div id="education">
+    <h2>Education</h2> {% for edu in site.data.resume.education %}
+    <div class="container">
+        <strong class="col-md-8">{{ edu.school }}</strong>
+        <em class="col-md-4">{{ edu.start }} to {{ edu.end }}</em>
+        <span class="col-md-4">{{ edu.degree }}</span>
+    </div>
+    {% endfor %}
+</div>

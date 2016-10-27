@@ -1,12 +1,28 @@
 <div id="header" class="section">
-        <div id="name">
-            <h2 id="head">{{ site.title }}</h2>
-        </div> <!-- End div[@id="name"] -->
-        <div id="contact">
-            <ul>
-                <li>{{ site.phone }}</li>
-                <li><a href="mailto:{{email}}" target="_top">{{ site.email }}</a></li>
-                <li>{{ site.address }}</li>
-            </ul>
-        </div> <!-- End div[@id="contact"] -->
-    </div> <!-- End div[@id="header"] -->
+    <div id="name">
+        <h2 id="head">{{ site.title }}</h2>
+    </div>
+    <!-- End div[@id="name"] -->
+    <div id="contact">
+        <ul>
+            {% if site.author.phone %}
+            <li>{{ site.author.phone }}</li>
+            {% endif %}
+            <li><a href="mailto:{{site.author.email}}" target="_top">{{ site.author.email }}</a></li>
+            {% if site.author.address %}
+            <li>{{ site.author.address }}</li>
+            {% endif %}
+            {% if site.author.github.username %}
+            <li>
+              {% include social/icon-github.html username=site.author.github.username %}
+            </li>
+            {% endif %}
+            {% if site.author.stackoverflow %}
+            <li>
+                {% include social/icon-stackoverflow.html userid=site.author.stackoverflow.userid username=site.author.stackoverflow.username%}
+            </li>
+            {% endif %}
+        </ul>
+    </div>
+
+</div>

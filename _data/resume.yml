@@ -1,0 +1,17 @@
+education:
+  - school: University of California, San Diego
+    degree: B.S. Physics, B.S. Mathematics
+    start: September 2010
+    end: June 2014
+
+experience:
+  - position: Software Developer
+    employer: Lawrence Berkeley National Lab
+    start: June 2014
+    end: Now
+    description:
+        - Significantly improved team efficiency by designing and implementing continuous integration workflow.
+        - Wrote scrapy spiders and clients for web APIs to ingest data in web application
+        - Automated incredibly labor intensive portions of workflow
+    environment: >
+        Python, django

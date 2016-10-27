@@ -7,16 +7,21 @@
 
 # Site settings
 title: Thomas Tu
-email: ttu@lbl.gov
-phone: (415) 568 0509
-address: 2153 Virginia St. Berkeley CA, 94709
+website: thomastu.github.io
+author:
+    email: ttu@lbl.gov
+    name: Thomas Tu
+    phone: (415) 568 0509
+    twitter:
+        username: thomasthetutu
+    github:
+        username: thomastu
+    stackoverflow:
+        userid: "4677586"
+        username: thomas-tu
 description: Personal site to discuss my public facing projects and an up-to-date resume.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://thomastu.github.io" # the base hostname & protocol for your site
-twitter_username: thomasthetutu
-github_username:  thomastu
-stackoverflow_userid: "4677586"
-stackoverflow_username: thomas-tu
 
 # Build settings
 markdown: kramdown
