@@ -1,7 +1,6 @@
 <div id="workExperience" class="section">
-    <h2>Work Experience</h2> {% for exp in site.data.resume.experience %}
-    <div class="card">
-        <div class="card-block">
+    <h2>Experience</h2> {% for exp in site.data.resume.experience %}
+    <div class="card-block">
             <em class="card-title pull-right">{{ exp.start }} to {{ exp.end }}</em>
             <h5 class="card-title">
               {{ exp.position }}
@@ -14,7 +13,6 @@
                   {% endfor %}
             </ul>
           </p>
-        </div>
     </div>
     {% endfor %}
 </div>
