@@ -10,19 +10,38 @@ experience:
     start: Oct 2015
     end: Now
     description:
-        - Significantly improved team efficiency by designing and implementing continuous integration workflow.
-        - Wrote scrapy spiders and clients for web APIs to ingest data in web application
-        - Automated incredibly labor intensive portions of workflow
-        - Primary developer for the International Database of Efficient Appliances (IDEA)
+        - Deployed an on-premise instance of Jenkins, introduced continuous-integration practices
+        - Vastly improved scope of code-based documentation, initiated use of sphinx
+        - Led intra-team programming workshops to introduce python logging, celery (distributed task queue), and other misc. topics.
+        - Wrote custom python clients for web portals and undocumented APIs to automatically collect data from government datasets across the world (and several languages)
+        - Fulfilled large data requests for data from the Annual Energy Outlook (AEO)
+        - Refactored core libraries to accomodate an expanding scope of work.
+        - Deployed and integrated an on-premise Sentry instance, removing the practice of manually inspecting on-disk logfiles.
   - position: Research Associate
     employer: Lawrence Berkeley National Lab
     start: Jun 2014
     end: Oct 2015
     description:
-      - Set up deployment stack for the IDEA web application (Django/postgres/memcache over Apache)
-      - Minor feature development on the Prospector project
-      - Data cleaning and prepartion in Excel/Python for DOE deliverables
-      - Generation of so called "Full fuel cycle" factors for use in other analyses
+      - Provisioned a Linux box to serve the IDEA web application built off of a python/django/postgres/memcache/apache stack
+      - Developed an approximate string matching package that largely automated data cleaning required for deliverables.
+      - Conducted data cleaning and formatting in Excel/Python for DOE deliverables
+      - Minor feature development on Prospector
+  - position: Maintainer
+    employer: pyEIA
+    start: Jun 2015
+    end: Now
+    description:
+      - Maintainer of open-source python client for the Energy Information Administration (EIA) API
+  - position: Volunteer
+    employer: Filippenko Group
+    start: Jan 2016
+    end: Ongoing
+    description:
+      - Under guidance of Issac Shivvers, wrote large parts of an image processing pipeline to assist in automated photometry.
+  - position: Volunteer
+    employer: Software Carpentry
+    description:
+      - Volunteered as a helper at a software carpentry workshop for intermediate Python.
 
 publications:
 - 'Gerke, Brian F., Michael A. McNeil, Thomas Tu, and Feiyang Xu. "The International Database of Efficient Appliances (IDEA): A New Resource for Global Efficiency Policy." In 2016 ACEEE Summer Study on Energy Efficiency in Buildings. Pacific Grove, Ca, 2016'
