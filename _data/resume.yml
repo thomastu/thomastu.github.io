@@ -28,20 +28,13 @@ experience:
       - Minor feature development on Prospector
   - position: Maintainer
     employer: pyEIA
-    start: Jun 2015
-    end: Now
     description:
-      - Maintainer of open-source python client for the Energy Information Administration (EIA) API
+      - Maintained and developed open-source python client for the Energy Information Administration (EIA) API
   - position: Volunteer
-    employer: Filippenko Group
-    start: Jan 2016
-    end: Ongoing
+    employer: Misc
     description:
-      - Under guidance of Issac Shivvers, wrote large parts of an image processing pipeline to assist in automated photometry.
-  - position: Volunteer
-    employer: Software Carpentry
-    description:
-      - Volunteered as a helper at a software carpentry workshop for intermediate Python.
+      - Under guidance of Issac Shivvers @ UC Berkeley Fillipenko Group, wrote large parts of an image processing pipeline to assist in automated photometry
+      - Helper at Software Carpentry workshop (Jun 2015) for intermediate python
 
 publications:
 - 'Gerke, Brian F., Michael A. McNeil, Thomas Tu, and Feiyang Xu. "The International Database of Efficient Appliances (IDEA): A New Resource for Global Efficiency Policy." In 2016 ACEEE Summer Study on Energy Efficiency in Buildings. Pacific Grove, Ca, 2016'
