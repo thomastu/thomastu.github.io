@@ -1,73 +1,8 @@
-#head {
-    text-align : center;
-    margin-top : -20px;
-    margin-bottom: 0px;
+.list-pipe .list-pipe-item + .list-pipe-item:before{
+    content: "| ";
+    white-space: pre;
 }
 
-#contact ul{
-    margin : 0 auto;
-    text-align: center;
-}
-
-#contact ul li{
-    display : inline;
-}
-
-#contact ul li + li:before{
-    content: " | ";
-    padding: 0 5px;
-}
-
-.sectionTitle {
-    margin-bottom : 10px;
-    border-bottom : 1px solid black;
-}
-
-.itemTitle {
-    float: left;
-    font-weight: 600;
-    font-size: 13pt;
-}
-
-.dateRange {
-    font-size : 12px;
-    font-style : italic;
-    font-weight: 200;
-    float: right;
-}
-
-.item + .item {
-    margin-top : 5px;
-}
-
-.itemMeta {
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom : -17px;
-    display: inline-block;
-    width : 95%;
-    overflow: hidden;
-    white-space: nowrap;
-}
-
-.skillsList:before {
-    content: "Relevant Skills : ";
-}
-
-.skillsList {
-    padding-top : 5px;
-    display : block;
-    font-size : 9pt;
-    font-family : freemono;
-}
-
-dt {
-  float: left;
-  clear: left;
-  margin-right: 5px;
-  font-weight: bold;
-}
-
-dd {
-  margin-left: 0px;
+.very-small {
+    font-size: 40%;
 }
