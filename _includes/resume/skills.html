@@ -1,0 +1,28 @@
+{% assign skillgroups = site.data.resume.skills | group_by:"category" | sort:"name" %}
+{% assign stars='<i class="fa fa-circle" style="font-size:75%; padding: 0 2.5px;" aria-hidden="true"></i>' %}
+
+<div id="skills">
+    <h2>Skills
+        <small class="text-muted list-pipe very-small">
+        <span class="list-inline-item list-pipe-item">{{ stars }}{{ stars }}{{ stars }} Proficient
+        </span>
+        <span class="list-inline-item list-pipe-item">{{ stars }}{{ stars }} Familiar
+        </span>
+        <span class="list-inline-item list-pipe-item">{{ stars }} Beginner
+        </span>
+        </small>
+    </h2>
+
+    {% for group in skillgroups %}
+        <strong class="text-muted text-uppercase small">{{ group.name }}</strong>
+        <ul class="list-inline">
+        {% assign items= group.items | sort:"level" | reverse %}
+        {% for skill in items %}
+            {% capture level %}{{skill.level | to_integer }}{% endcapture %}
+            {% capture proficiency %}{% for _ in (1..level) %}{{ stars }}{% endfor %}{% endcapture %}
+            <li>{{ proficiency }} {{ skill.name }}</li>
+        {% endfor %}
+        </ul>
+    {% endfor %}
+
+</div>

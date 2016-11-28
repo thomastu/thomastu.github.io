@@ -39,3 +39,29 @@ experience:
 publications:
 - 'Gerke, Brian F., Michael A. McNeil, Thomas Tu, and Feiyang Xu. "The International Database of Efficient Appliances (IDEA): A New Resource for Global Efficiency Policy." In 2016 ACEEE Summer Study on Energy Efficiency in Buildings. Pacific Grove, Ca, 2016'
 - 'Gerke, Brian F., Michael A. McNeil, and Thomas Tu. International Database of Efficient Appliances (IDEA): A Novel Tool for Efficiency Program Development and Evaluation., 2015'
+
+skills:
+    - name: git
+      level: 3
+      category: general
+    - name: django
+      level: 3
+      category: web development
+    - name: scrapy
+      level: 2
+      category: web development
+    - name: pandas
+      level: 2
+      category: scientific computing
+    - name: numpy
+      level: 2
+      category: scientific computing
+    - name: linux administration
+      level: 2
+      category: general
+    - name: html/css/js
+      level: 2
+      category: web development
+    - name: '"dev Ops" (linux provisioning)'
+      level: 1
+      category: general
