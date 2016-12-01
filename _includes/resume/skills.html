@@ -13,16 +13,32 @@
         </small>
     </h2>
 
-    {% for group in skillgroups %}
-        <strong class="text-muted text-uppercase small">{{ group.name }}</strong>
-        <ul class="list-inline">
-        {% assign items= group.items | sort:"level" | reverse %}
-        {% for skill in items %}
-            {% capture level %}{{skill.level | to_integer }}{% endcapture %}
-            {% capture proficiency %}{% for _ in (1..level) %}{{ stars }}{% endfor %}{% endcapture %}
-            <li>{{ proficiency }} {{ skill.name }}</li>
-        {% endfor %}
-        </ul>
-    {% endfor %}
+    <div class="container">{% for group in skillgroups %}
+      {% assign items= group.items | sort:"level" | reverse %}
+      {% assign N= forloop.index | modulo: 3 %}
+        {% if N == 1 %}
+        <div class="row">
+        {% endif %}
+        <div class="col-xs-4">
+          <div class="col-xs-12 text-xs-center">
+            <strong class="text-uppercase text-muted">
+            {{ group.name }}
+          </strong>
+          </div>
 
+          <div class="col-xs-12">{% for skill in items %}
+          {% capture level %}{{skill.level | to_integer }}{% endcapture %}
+          {% capture proficiency %}
+            {% for _ in (1..level) %}{{ stars }}{% endfor %}
+          {% endcapture %}
+            <div class="col-xs-12 text-xs-center">
+            <span>{{ skill.name }}</span>
+            <span>{{ proficiency }}</span>
+            </div>
+          {% endfor %}</div>
+        {% if N == 0 %}
+        </div>
+        {% endif %}
+        </div>{% endfor %}
+    </div>
 </div>

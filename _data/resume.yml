@@ -62,6 +62,9 @@ skills:
     - name: html/css/js
       level: 2
       category: web development
-    - name: '"dev Ops" (linux provisioning)'
+    - name: 'devOps'
       level: 1
       category: general
+    - name: foo
+      level: 3
+      category: bar
