@@ -1,4 +1,4 @@
-<div id="workExperience" class="section">
+<div id="workExperience">
     <h2>Experience</h2> {% for exp in site.data.resume.experience %}
     <div class="card-block">
             {% if exp.start and exp.end %}
@@ -8,13 +8,13 @@
               {{ exp.position }}
               <small class="text-muted">{{ exp.employer }}</small>
           </h5>
-          <p class="card-text">
+          <div class="card-text">
               <ul>
                   {% for d in exp.description %}
                   <li>{{d}}</li>
                   {% endfor %}
             </ul>
-          </p>
+        </div>
     </div>
     {% endfor %}
 </div>
