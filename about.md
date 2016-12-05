@@ -4,6 +4,4 @@ title: About
 permalink: /about/
 ---
 
-I'm a software developer at Lawrence Berkeley National Lab primarily contributing to data collection efforts for studying appliance markets across the world.
-
-I graduated from UC San Diego in 2014 with a dual degree in Mathematics and Physics.  I started working in the Energy Efficiency Standards group as an RA, but have since moved onto a software development role (largely under the guidance of Brian Gerke.)  I'd like to continue putting my skills toward producing good research for energy policy so I'm currently focused on applying to graduate programs in Stats with rigorous computational components.
+I'm a software developer at Lawrence Berkeley National Lab working in the Energy Efficiency Standards group.  I graduated from UC San Diego in 2014 with a dual degree in Mathematics and Physics.  In the long term, I'm interested in applying software engineering skills in a research environment (so called "Research Software Engineering").  In the short term, I'd like to continue building software-based tools for research to help parse data in novel ways. 
