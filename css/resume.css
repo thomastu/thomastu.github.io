@@ -1,8 +1,0 @@
-.list-pipe .list-pipe-item + .list-pipe-item:before{
-    content: "| ";
-    white-space: pre;
-}
-
-.very-small {
-    font-size: 40%;
-}
