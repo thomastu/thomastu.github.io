@@ -5,18 +5,24 @@ education:
     end: June 2014
 
 experience:
+  - position: Software Engineer I
+    employer: Energy Solutions
+    start: March 2017
+    end: Now
+    description:
+        - Feature development for several web applications written in python/Django
   - position: Software Developer
     employer: Lawrence Berkeley National Lab
     start: Oct 2015
-    end: Now
+    end: Feb 2017
     description:
-        - Deployed an on-premise instance of Jenkins, introduced continuous-integration practices
-        - Vastly improved scope of code-based documentation, initiated use of sphinx
-        - Led intra-team programming workshops to introduce python logging, celery (distributed task queue), and other misc. topics.
-        - Wrote custom python clients for web portals and undocumented APIs to automatically collect data from government datasets across the world (and several languages)
+        - Primary developer for the International Database of Efficient Appliances
+        - Managed self-hosted dev ops services, such as Jenkins for CI and Sentry for application logging
+        - Vastly improved scope of code-based documentation + sphinx
+        - Led intra-team programming workshops to introduce python logging, celery (distributed task queue)
+        - Created python clients for web portals and undocumented APIs to automatically collect data from government datasets across the world
         - Fulfilled large data requests for data from the Annual Energy Outlook (AEO)
         - Refactored core libraries to accomodate an expanding scope of work.
-        - Deployed and integrated an on-premise Sentry instance, removing the practice of manually inspecting on-disk logfiles.
   - position: Research Associate
     employer: Lawrence Berkeley National Lab
     start: Jun 2014
@@ -29,7 +35,7 @@ experience:
   - position: Maintainer
     employer: pyEIA
     description:
-      - Maintained and developed open-source python client for the Energy Information Administration (EIA) API
+      - Maintained and developed open-source python client to access the Energy Information Administration (EIA) API
   - position: Volunteer
     employer: Misc
     description:
