@@ -4,4 +4,7 @@ title: About
 permalink: /about/
 ---
 
-I'm a software developer at Lawrence Berkeley National Lab working in the Energy Efficiency Standards group.  I graduated from UC San Diego in 2014 with a dual degree in Mathematics and Physics.  In the long term, I'm interested in applying software engineering skills in a research environment (so called "Research Software Engineering").  In the short term, I'd like to continue building software-based tools for research to help parse data in novel ways. 
+I'm a software engineer at [Energy Solutions] working on various python/Django projects for efficiency programs around the country.  Up until early 2017, I was a software developer at Lawrence Berkeley National Lab in the [Energy Efficiency Standards][EES] group.  At LBNL, I primarly worked on IDEA (the International Database for Efficienct Appliances) and other internal tools which facilitated the data collection, management and analysis of online appliance markets.  Outside of development work on IDEA, I provided general technical support for Department of Energy's Appliance Standards Program.  I (recently) graduated in 2014 from UC San Diego with a B.S. in Physics, and a B.S. in Mathematics.  
+
+[Energy Solutions]: https://energy-solution.com/
+[EES]: https://ees.lbl.gov/
