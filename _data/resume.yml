@@ -81,3 +81,6 @@ skills:
     - name: Data Warehousing
       level: 2
       category: General
+    - name: Workshop Development
+      level: 1
+      category: General
