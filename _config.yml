@@ -17,8 +17,8 @@ author:
     github:
         username: thomastu
     stackoverflow:
-        userid: "4677586"
-        username: thomas-tu
+        userid: "4267783"
+        username: thtu
 description: Personal site to discuss my public facing projects and an up-to-date resume.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://thomastu.github.io" # the base hostname & protocol for your site
