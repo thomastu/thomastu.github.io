@@ -41,30 +41,60 @@ publications:
 - 'Gerke, Brian F., Michael A. McNeil, and Thomas Tu. International Database of Efficient Appliances (IDEA): A Novel Tool for Efficiency Program Development and Evaluation., 2015'
 
 skills:
-    - name: git
+    - name: Git
       level: 3
-      category: general
-    - name: django
-      level: 3
-      category: web development
-    - name: scrapy
+      category: platforms and tools
+    - name: Linux
       level: 2
-      category: web development
-    - name: pandas
-      level: 2
-      category: scientific computing
-    - name: numpy
-      level: 2
-      category: scientific computing
-    - name: linux administration
-      level: 2
-      category: general
-    - name: html/css/js
-      level: 2
-      category: web development
-    - name: 'devOps'
+      category: platforms and tools
+    - name: Postgres
       level: 1
-      category: general
-    - name: foo
+      category: platforms and tools
+    - name: Apache
+      level: 1
+      category: platforms and tools
+    - name: Celery
+      level: 2
+      category: platforms and tools
+    - name: Redis
+      level: 1
+      category: platforms and tools
+    - name: Jenkins
+      level: 2
+      category: platforms and tools
+    - name: python
       level: 3
-      category: bar
+      category: languages
+    - name: Mathematica
+      level: 1
+      category: languages
+    - name: Matlab
+      level: 1
+      category: languages
+    - name: R
+      level: 1
+      category: languages
+    - name: Django
+      level: 3
+      category: web development
+    - name: HTML
+      level: 2
+      category: web development
+    - name: CSS
+      level: 2
+      category: web development
+    - name: Javascript
+      level: 1
+      category: web development
+    - name: Scrapy
+      level: 2
+      category: misc
+    - name: pandas
+      level: 3
+      category: misc
+    - name: regular expressions
+      level: 3
+      category: misc
+    - name: Astropy
+      level: 1
+      category: misc
