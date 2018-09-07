@@ -24,3 +24,49 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://thomastu.github.io" # the base hostname & protocol for your site
 
 # Build settings
+# Where things are
+collections:
+  my_categories:
+    output: true
+    permalink: /blog/category/:name/
+  my_tags:
+    output: true
+    permalink: /blog/tag/:name/
+
+# Handling Reading
+exclude: [Gemfile, README.md]
+
+# Plugins
+plugins:
+  - jekyll-paginate
+
+# Outputting
+permalink: /post/:title/
+paginate: 5
+paginate_path: '/blog/page/:num/'
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: pages
+    values:
+      layout: page
+  -
+    scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+  -
+    scope:
+      path: ""
+      type: my_categories
+    values:
+      layout: blog_by_category
+  -
+    scope:
+      path: ""
+      type: my_tags
+    values:
+      layout: blog_by_tag

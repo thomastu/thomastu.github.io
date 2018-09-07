@@ -7,11 +7,11 @@
       {% include header.html %}
       <br>
       <div class="container">
-          A printer-friendly html version is also made available <a href="{{ 'raw.html' | prepend: site.baseurl }}"  target="_blank">here</a>.  Click <a id="download" href="#">here</a> to download this document via <a href="https://github.com/MrRio/jsPDF" target="_blank">jsPDF</a> -- be warned, this library is still heavily in development!
+          A printer-friendly html version is also made available <a href="{{ 'raw' | prepend: site.baseurl }}"  target="_blank">here</a>.  Click <a id="download" href="#">here</a> to download this document via <a href="https://github.com/MrRio/jsPDF" target="_blank">jsPDF</a> -- be warned, this library is still heavily in development!
       </div>
       <hr>
-      <div class="page-content">
-        <div id="resume-content"  style="background-color: white;" class="container">
+      <div id="resume-content" class="page-content">
+        <div style="background-color: white;" class="container">
           {% include resume/header.html %}
           <hr>
           {% include resume/work.html %}
@@ -25,21 +25,20 @@
         </div>
       </div>
     {% include footer.html %}
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
-    <script>
-    console.log('here!');
-    $(function () {
 
-      $('#download').click(function () {
-        var pdf = new jsPDF('p', 'pt', 'letter');
-        pdf.addHTML(document.getElementById('resume-content'), function(){
-            pdf.save("my-resume.pdf");
-        });
-       });
-    });
-    </script>
   </body>
-
-
+  <script src="/js/html2pdf.bundle.min.js"></script>
+  <script type="text/javascript">
+    $('#download').click(function() {
+      var element = document.getElementById('resume-content');
+      var opt = {
+        margin:       .5,
+        filename:     'resume.pdf',
+        image:        { type: 'jpeg', quality: 1 },
+        html2canvas:  { scale: 1 },
+        jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' }
+      };
+      html2pdf(element, opt);}
+  )
+  </script>
 </html>

@@ -1,8 +1,10 @@
 ---
 layout: post
-title:  "Hello World!"
+title:  "Test Post Please Ignore"
 date:   2016-10-27 00:27:00 PDT
-categories: misc
+category: misc
+tags:
+  - test
 ---
 
 Test post, please ignore.  

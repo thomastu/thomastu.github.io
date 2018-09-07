@@ -8,7 +8,7 @@
         </span>
         <span class="list-inline-item">Familiar {{ stars }}{{ stars }}
         </span>
-        <span class="list-inline-item">Beginner {{ stars }} 
+        <span class="list-inline-item">Beginner {{ stars }}
         </span>
         </small>
     </h2>
@@ -19,14 +19,14 @@
         {% if N == 1 %}
         <div class="row" style="padding: 5px 0;">
         {% endif %}
-        <div class="col-xs-4">
-          <div class="col-xs-12 text-xs-center">
+        <div class="col">
+          <div class="col text-xs-center">
             <strong class="text-uppercase text-muted">
             {{ group.name }}
             </strong>
           </div>
 
-          <div class="col-xs-12">{% for skill in items %}
+          <div class="col">{% for skill in items %}
           {% capture level %}{{skill.level | to_integer }}{% endcapture %}
           {% capture proficiency %}
             {% for _ in (1..level) %}{{ stars }}{% endfor %}
