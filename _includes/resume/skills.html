@@ -19,26 +19,24 @@
         {% if N == 1 %}
         <div class="row" style="padding: 5px 0;">
         {% endif %}
-        <div class="col">
-          <div class="col text-xs-center">
+        <div class="row" role="group">
+          <div class="col">
             <strong class="text-uppercase text-muted">
             {{ group.name }}
             </strong>
-          </div>
+
 
           <div class="col">{% for skill in items %}
           {% capture level %}{{skill.level | to_integer }}{% endcapture %}
           {% capture proficiency %}
             {% for _ in (1..level) %}{{ stars }}{% endfor %}
           {% endcapture %}
-            <div class="row text-xs-center">
-            <span>{{ skill.name }}</span>
-            <span>{{ proficiency }}</span>
-            </div>
+            <span class="badge text-muted badge-light">{{ skill.name }} {{ proficiency }}</span>
           {% endfor %}</div>
         {% if N == 0 %}
         </div>
         {% endif %}
-        </div>{% endfor %}
+        </div></div>
+        {% endfor %}
     </div>
 </div>

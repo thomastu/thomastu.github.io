@@ -3,34 +3,35 @@ education:
     degree: B.S. Physics, B.S. Mathematics
     start: September 2010
     end: June 2014
-
+topic: |
+  Software engineer passionate about energy efficiency and decarbonisation.
+  Let's chat about software and tooling to support program implementation, impacts evaluation, data collection and analysis!
 experience:
   - position: Software Engineer
     employer: Energy Solutions
     start: March 2017
     end: Now
     description:
-        - Provided development support of an online rebate-processing platform for efficiency rebate programs
-        - Trained and onboarded new hires
-        - Developed a datawarehouse to facilitate the first large-scale analysis of energy savings from networked lighting controls
-        - Designed and developed a datawarehouse and analysis platform to evaluate energy, emissions and monetary impacts of efficiency standards portfolios
+      - Led the development and design of internal data warehousing efforts for efficiency policy impacts, networked lighting controls evaluation, and internal revenue and workload forecasts.
+      - Contributed to the development and maintenance of efficiency rebate claim processing applications.
+      - Trained team members to interact with internal developer operations infrastructure for deployments and monitoring.
+      - Trained non-engineering staff to use basic programming tools for data analysis and general research-oriented programming.
   - position: Software Developer
     employer: Lawrence Berkeley National Lab
     start: Oct 2015
     end: Feb 2017
     description:
-        - Led development of the International Database of Efficient Appliances
-        - Provided "dev-ops" support and oversaw provisioning, deployment and installation of internal developer tools and production environments
-        - Led a documentation overhaul effort of internal tools using sphinx
-        - Led intra-team programming workshops to introduce python logging, celery (distributed task queue)
-        - Created python clients for web portals and undocumented APIs to automatically collect data from government datasets across the world
-        - Fulfilled internal data requests for automated collection of mission-critical datasets
+      - Led implementation of the International Database of Efficient Appliances
+      - Provided developer operations support for provisioning, deployment and installation of internal developer tools and web applications.
+      - Led intra-team programming workshops to introduce new tools for logging and distributed programming.
+      - Created python clients and interfaces for reversed engineered APIs and existing RESTful services.
+      - Fulfilled internal data requests and implemented automated collection of mission-critical datasets
   - position: Research Associate
     employer: Lawrence Berkeley National Lab
     start: Jun 2014
     end: Oct 2015
     description:
-      - Provided provisioning support for a LAMP stack application
+      - Implemented basic bug fixes and limited feature development on a django application
       - Developed an approximate string matching package that largely automated data cleaning required for deliverables.
       - Conducted data cleaning and formatting in Excel/Python for DOE deliverables
   - position: Maintainer
@@ -44,43 +45,46 @@ experience:
       - Helper at Software Carpentry workshop (Jun 2015) for intermediate python
 
 publications:
-- 'Teddy Kisch, Eric Rubin, Thomas Tu, Kelly Sanders, Jason Huffine, and Brittany Luntz.  Energy Savings from Networked Lighting Control (NLC) Systems., Sept 2017'
-- 'Gerke, Brain F., McNeil, Michael A & Tu, Thomas.  The International Database of Efficient Appliances (IDEA): A new tool to support appliance energy-efficiency deployment.  Applied Energy, 205, 453-464., 2017'
-- 'Letschert, V., Gerke, B., McNeil, M., Tu, T., Dean, B., Sartono, E., ... & Gallinat, C. Baseline Evaluation and Policy Implications for Air Conditioners in Indonesia. In Proceedings of the 9th Inernational Conference on Energy Efficiency in Domestic Appliances and Lighting., 2017'
-- 'Gerke, Brian F., Michael A. McNeil, Thomas Tu, and Feiyang Xu. "The International Database of Efficient Appliances (IDEA): A New Resource for Global Efficiency Policy." In 2016 ACEEE Summer Study on Energy Efficiency in Buildings. Pacific Grove, Ca, 2016'
-- 'Gerke, Brian F., Michael A. McNeil, and Thomas Tu. International Database of Efficient Appliances (IDEA): A Novel Tool for Efficiency Program Development and Evaluation., 2015'
+  - 'Teddy Kisch, Eric Rubin, Thomas Tu, Kelly Sanders, Jason Huffine, and Brittany Luntz.  Energy Savings from Networked Lighting Control (NLC) Systems., Sept 2017'
+  - 'Gerke, Brain F., McNeil, Michael A & Tu, Thomas.  The International Database of Efficient Appliances (IDEA): A new tool to support appliance energy-efficiency deployment.  Applied Energy, 205, 453-464., 2017'
+  - 'Letschert, V., Gerke, B., McNeil, M., Tu, T., Dean, B., Sartono, E., ... & Gallinat, C. Baseline Evaluation and Policy Implications for Air Conditioners in Indonesia. In Proceedings of the 9th Inernational Conference on Energy Efficiency in Domestic Appliances and Lighting., 2017'
+  - 'Gerke, Brian F., Michael A. McNeil, Thomas Tu, and Feiyang Xu. "The International Database of Efficient Appliances (IDEA): A New Resource for Global Efficiency Policy." In 2016 ACEEE Summer Study on Energy Efficiency in Buildings. Pacific Grove, Ca, 2016'
+  - 'Gerke, Brian F., Michael A. McNeil, and Thomas Tu. International Database of Efficient Appliances (IDEA): A Novel Tool for Efficiency Program Development and Evaluation., 2015'
 
 skills:
-    - name: Git
-      level: 3
-      category: Tools
-    - name: Django
-      level: 3
-      category: Tools
-    - name: pandas/numpy/scipy
-      level: 3
-      category: Tools
-    - name: Scrapy
-      level: 2
-      category: Tools
-    - name: sqlalchemy/Flask
-      level: 1
-      category: Tools
-    - name: saltstack
-      level: 1
-      category: Tools
-    - name: Web Development
-      level: 3
-      category: General
-    - name: Dev Ops
-      level: 1
-      category: General
-    - name: Data Engineering
-      level: 3
-      category: General
-    - name: Data Warehousing
-      level: 2
-      category: General
-    - name: Workshop Development
-      level: 1
-      category: General
+  - name: web application development
+    level: 3
+    category: General
+  - name: data engineering
+    level: 3
+    category: General
+  - name: django
+    level: 3
+    category: Programming
+  - name: webscraping (scrapy)
+    level: 2
+    category: Programming
+  - name: devops tooling
+    level: 1
+    category: Programming
+  - name: workshop development
+    level: 1
+    category: General
+  - name: python
+    level: 3
+    category: Programming
+  - name: data warehousing and design
+    level: 2
+    category: Programming
+  - name: software estimation
+    level: 2
+    category: General
+  - name: pandas
+    level: 3
+    category: Programming
+  - name: visualization
+    level: 2
+    category: Programming
+  - name: ETL & Batch Processing
+    level: 2
+    category: Programming
