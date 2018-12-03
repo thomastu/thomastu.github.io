@@ -43,6 +43,13 @@ experience:
     description:
       - Under guidance of Issac Shivvers @ UC Berkeley Fillipenko Group, developed an image processing pipeline to assist in automated photometry
       - Helper at Software Carpentry workshop (Jun 2015) for intermediate python
+  - position: Volunteer/Coursework
+    employer: Prof Tom Murphy, dothemath.ucsd.edu
+    description:
+      - Performed basic research on generation potential of hydro and wind for dothemath, a blog using physics and estimation to assess energy, growth, and options.
+      - https://dothemath.ucsd.edu/2011/12/how-much-dam-energy-can-we-get/
+      - https://dothemath.ucsd.edu/2011/12/wind-fights-solar/
+      - https://dothemath.ucsd.edu/2011/11/pump-up-the-storage/
 
 publications:
   - 'Teddy Kisch, Eric Rubin, Thomas Tu, Kelly Sanders, Jason Huffine, and Brittany Luntz.  Energy Savings from Networked Lighting Control (NLC) Systems., Sept 2017'
