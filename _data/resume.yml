@@ -50,6 +50,29 @@ experience:
       - https://dothemath.ucsd.edu/2011/12/how-much-dam-energy-can-we-get/
       - https://dothemath.ucsd.edu/2011/12/wind-fights-solar/
       - https://dothemath.ucsd.edu/2011/11/pump-up-the-storage/
+projects:
+  - name: pyEIA
+    links:
+      github: https://github.com/thomastu/pyEIA
+    description: |
+      An Open-source python client to interact with the Energy Information Administration (EIA) API
+  - name: flipperPhoto
+    links: 
+      github: https://github.com/ishivvers/FlipperPhoto
+    description: |
+      Under guidance of Issac Shivvers @ UC Berkeley Fillipenko Group, developed an image processing pipeline to assist in automated photometry
+  - name: BERC Cleanweb Hackathon 2016 - NIMBYChina
+    links:
+      github: https://github.com/sustainablejohn/NIMBYChina
+    description: |
+      An R-based visualization on Coal plants in China
+  - name: dothemath.ucsd.edu - Hydro and Wind potential estimation
+    links:
+      How Much Dam Energy Can we Get: https://dothemath.ucsd.edu/2011/12/how-much-dam-energy-can-we-get/
+      Wind Fights Solar: https://dothemath.ucsd.edu/2011/12/wind-fights-solar/
+      Pump up the Storage: https://dothemath.ucsd.edu/2011/11/pump-up-the-storage/
+    description: |
+      Performed basic research on generation potential of hydro and wind for dothemath, a blog using physics and estimation to assess energy, growth, and options.
 
 publications:
   - 'Teddy Kisch, Eric Rubin, Thomas Tu, Kelly Sanders, Jason Huffine, and Brittany Luntz.  Energy Savings from Networked Lighting Control (NLC) Systems., Sept 2017'
