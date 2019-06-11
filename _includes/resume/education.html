@@ -1,9 +1,0 @@
-<div id="education">
-    <h2>Education</h2> {% for edu in site.data.resume.education %}
-    <div class="card-block">
-        <em class="card-title pull-right">{{ edu.start }} to {{ edu.end }}</em>
-        <strong class="card-title">{{ edu.school }}</strong>
-        <span class="text-muted">{{ edu.degree }}</span>
-    </div>
-    {% endfor %}
-</div>
