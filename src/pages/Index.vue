@@ -7,6 +7,10 @@
         <p class="block">
           I'm currently over-engineering a new personal site!
           Stay tuned!
+          <hr>
+          <a class="is-primary" href="https://github.com/thomastu">
+            <font-awesome :icon="['fab', 'github']"/>
+          </a>
         </p>
 
       </div>

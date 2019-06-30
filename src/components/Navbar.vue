@@ -12,9 +12,9 @@
           <div class="navbar-end">
             <span class="navbar-item has-text-centered">
               <!-- FIXME(1) Get this from data! -->
-              <a class="is-primary" href="https://github.com/thomastu">
+              <!-- <a class="is-primary" href="https://github.com/thomastu">
                 <font-awesome :icon="['fab', 'github']"/>
-              </a>
+              </a> -->
             </span>
           </div>
         </div>
