@@ -9,5 +9,8 @@ module.exports = {
   siteDescription: '',
   siteUrl: 'https://www.thomastu.io',
   plugins: [
-  ]
+  ],
+  icon: {
+    favicon: './src/favicon.svg'
+  }
 }
