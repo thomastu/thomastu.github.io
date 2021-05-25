@@ -1,13 +1,12 @@
 <template>
-  <div>
-    <h1>Blog Posts</h1>
-    <ul>
+  <div class="container mb-4">
+    <p class="is-size-2">Posts</p>
+    <ul class="content">
       <li v-for="article of articles" :key="article.slug">
         <NuxtLink :to="{ name: 'blog-slug', params: { slug: article.slug } }">
           <img :src="article.img" />
           <div>
-            <h2>{{ article.title }}</h2>
-            <p>by {{ article.author.name }}</p>
+            <h3>{{ article.date }} - {{ article.title }}</h3>
             <p>{{ article.description }}</p>
           </div>
         </NuxtLink>
@@ -19,11 +18,10 @@
 <script>
 export default {
   name: 'BlogList',
-
   async asyncData({ $content, params }) {
     const articles = await $content('posts')
-      .only(['title', 'description', 'img', 'slug', 'author'])
-      .sortBy('createdAt', 'asc')
+      .only(['title', 'description', 'img', 'slug', 'author', 'date'])
+      .sortBy('date', 'desc')
       .fetch()
 
     return {

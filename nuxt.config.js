@@ -1,3 +1,6 @@
+import theme from '@nuxt/content-theme-docs'
+
+
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
@@ -34,7 +37,8 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
-    '@nuxt/image'
+    '@nuxt/image',
+    "@nuxtjs/tailwindcss"
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -53,7 +57,8 @@ export default {
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {
-    nestedProperties: ['author.name']
+    nestedProperties: ['author.name'],
+    liveEdit: false
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

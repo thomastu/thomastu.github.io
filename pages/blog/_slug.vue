@@ -1,21 +1,31 @@
 <template>
-  <article>
+  <article class="container px-5">
     <h1 class="title">{{ article.title }}</h1>
     <p>Post last updated: {{ formatDate(article.updatedAt) }}</p>
     <br />
-    <nav>
-      <ul>
-        <li v-for="link of article.toc" :key="link.id">
-          <NuxtLink
-            :to="`#${link.id}`"
-            :class="{ 'py-4': link.depth === 2, 'ml-4 pb-4': link.depth === 3 }"
-            >{{ link.text }}</NuxtLink
-          >
-        </li>
-      </ul>
-    </nav>
+    <div class="toc mx-3 mb-3">
+      <section class="menu col-4">
+        <p class="menu-label">Table of Contents</p>
+        <ul class="menu-list">
+          <li v-for="link of article.toc" :key="link.id">
+            <NuxtLink
+              :to="`#${link.id}`"
+              :class="{
+                'px-4': link.depth === 2,
+                'ml-4': link.depth === 3,
+              }"
+              >{{ link.text }}</NuxtLink
+            >
+          </li>
+        </ul>
+      </section>
+    </div>
+    <section>
+      <nuxt-content class="prose mb-5" :document="article" />
+    </section>
 
-    <nuxt-content class="content" :document="article" />
+    <hr />
+
     <author :author="article.author" />
     <prev-next :prev="prev" :next="next" />
   </article>
@@ -27,7 +37,7 @@ export default {
     const article = await $content('posts', params.slug).fetch()
 
     const [prev, next] = await $content('posts')
-      .only(['title', 'slug'])
+      .only(['title', 'slug', 'date'])
       .sortBy('date', 'asc')
       .surround(params.slug)
       .fetch()
@@ -47,3 +57,10 @@ export default {
   },
 }
 </script>
+
+<style>
+.toc {
+  max-width: 500px;
+  margin-left: -10px;
+}
+</style>
