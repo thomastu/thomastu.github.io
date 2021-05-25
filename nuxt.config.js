@@ -61,4 +61,5 @@ export default {
 
   // Image configuration: https://image.nuxtjs.org/getting-started/installation
   image: {},
+  
 }

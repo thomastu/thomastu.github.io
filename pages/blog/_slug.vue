@@ -15,7 +15,7 @@
       </ul>
     </nav>
 
-    <nuxt-content :document="article" />
+    <nuxt-content class="content" :document="article" />
     <author :author="article.author" />
     <prev-next :prev="prev" :next="next" />
   </article>

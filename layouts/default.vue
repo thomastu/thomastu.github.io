@@ -1,9 +1,10 @@
 <template>
   <div>
     <b-navbar
+      id="main-nav"
       class="navbar is-transparent mb-4"
-      fixed-top="true"
-      centered="true"
+      fixed-top
+      centered
     >
       <template #brand>
         <b-navbar-item tag="router-link" :to="{ path: '/' }">
@@ -15,10 +16,10 @@
       </template>
       <template #start>
         <nuxt-link
-          class="navbar-item"
           v-for="(item, key) of items"
           :key="key"
           :to="item.to"
+          class="navbar-item is-size-4"
           exact-active-class="is-active"
         >
           {{ item.title }}
@@ -38,7 +39,7 @@
       <nuxt />
     </section>
 
-    <footer class="footer">
+    <footer class="footer is-small">
       <div class="content">
         <p class="has-text-right is-size-7">
           if I were an enterprise with lawyers I would put a copyright here but
@@ -56,15 +57,15 @@ export default {
     return {
       items: [
         {
-          title: 'Home',
+          title: 'home',
           to: { name: 'index' },
         },
         {
-          title: 'About',
+          title: 'about',
           to: { name: 'about' },
         },
         {
-          title: 'Posts',
+          title: 'posts',
           to: { name: 'blog' },
         },
       ],
@@ -72,3 +73,9 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+#main-nav {
+  box-shadow: 0px 2px;
+}
+</style>
