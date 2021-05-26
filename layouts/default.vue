@@ -1,6 +1,6 @@
 <template>
   <div id="default">
-    <b-navbar id="main-nav" class="navbar is-transparent" shadow active>
+    <b-navbar id="main-nav" class="navbar is-transparent" shadow>
       <template #brand>
         <b-navbar-item tag="router-link" :to="{ path: '/' }">
           <img
