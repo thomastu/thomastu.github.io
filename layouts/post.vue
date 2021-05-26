@@ -7,26 +7,5 @@
 </template>
 
 <script>
-export default {
-  data() {
-    return {
-      items: [
-        {
-          title: 'about',
-          to: { name: 'about' },
-        },
-        {
-          title: 'thoughts',
-          to: { name: 'blog' },
-        },
-      ],
-    }
-  },
-}
+export default {}
 </script>
-
-<style scoped>
-span.back-text {
-  display: inline;
-}
-</style>

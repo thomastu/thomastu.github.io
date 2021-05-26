@@ -23,9 +23,7 @@ export default {
   css: [],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [
-    { src: '~/plugins/vue-typed.js', ssr: false }
-  ],
+  plugins: [{ src: '~/plugins/vue-typed.js', ssr: false }],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -46,7 +44,6 @@ export default {
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
-
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -55,7 +52,7 @@ export default {
   // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {
     nestedProperties: ['author.name'],
-    liveEdit: false
+    liveEdit: false,
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
@@ -63,5 +60,4 @@ export default {
 
   // Image configuration: https://image.nuxtjs.org/getting-started/installation
   image: {},
-
 }
