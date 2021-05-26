@@ -1,5 +1,5 @@
 <template>
-  <article class="container px-5">
+  <article class="container">
     <h1 class="title">
       <NuxtLink :to="'./'">
         <b-icon
@@ -19,7 +19,7 @@
     <br />
 
     <div class="columns">
-      <section class="column-6 toc mx-3 mb-3 pt-4">
+      <section class="column-6 toc mb-3 pt-4">
         <div class="menu pl-8">
           <p class="is-size-6 menu-label has-text-weight-bold">
             Table of Contents
@@ -41,12 +41,15 @@
       </section>
       <div class="divider is-vertical is-light is-success is-left mt-4"></div>
       <section class="column">
-        <nuxt-content class="prose prose-green mb-5" :document="article" />
+        <nuxt-content
+          class="prose prose-green mb-5 max-w-none"
+          :document="article"
+        />
+
+        <div class="divider">more</div>
+        <prev-next class="mb-5" :prev="prev" :next="next" />
       </section>
     </div>
-    <hr />
-
-    <prev-next class="mb-4" :prev="prev" :next="next" />
   </article>
 </template>
 
@@ -87,6 +90,7 @@ export default {
 }
 
 .nuxt-content span.icon {
+  /* Offset anchor icons */
   margin-left: -24px;
 }
 
