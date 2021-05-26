@@ -64,11 +64,9 @@ export default {
   generate: {
     async routes() {
       const { $content } = require('@nuxt/content')
-      const articles = await $content('posts', { deep: true })
-        .only(['slug'])
-        .fetch()
-      return articles.map((article) =>
-        article.slug === 'index' ? '/' : `/blog/${article.slug}`
+      const dynamicRoutes = await $content('posts').only(['slug']).fetch()
+      return dynamicRoutes.map((myroute) =>
+        myroute.slug === '/index' ? '/' : '/blog/' + myroute.slug
       )
     },
   },
