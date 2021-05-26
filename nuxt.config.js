@@ -64,10 +64,16 @@ export default {
   generate: {
     async routes() {
       const { $content } = require('@nuxt/content')
-      const dynamicRoutes = await $content('posts').only(['slug']).fetch()
-      return dynamicRoutes.map((myroute) =>
+      const dynamicRoutes = await $content('posts')
+        .only(['slug', 'author'])
+        .fetch()
+      const blogRoutes = dynamicRoutes.map((myroute) =>
         myroute.slug === '/index' ? '/' : '/blog/' + myroute.slug
       )
+      const authorRoutes = dynamicRoutes.map(
+        (myroute) => '/blog/author/' + myroute.author.name
+      )
+      return blogRoutes.concat([...new Set(authorRoutes)])
     },
   },
 }

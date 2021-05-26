@@ -1,7 +1,7 @@
 <template>
   <article class="container">
     <h1 class="title">
-      <NuxtLink :to="'./'">
+      <NuxtLink :to="'/blog'">
         <b-icon
           size="is-medium"
           type="is-info"
