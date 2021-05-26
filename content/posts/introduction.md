@@ -1,7 +1,8 @@
 ---
-title: How I built this
-description: A backend developer's foray into the unnecessarily complicated world of front-end development.
+title: How I made this
+description: Over-engineering a simple personal blog with Nuxt, Vue and github pages.
 date: 05/23/2021
+published: true
 author:
     name: Thomas Tu
 ---

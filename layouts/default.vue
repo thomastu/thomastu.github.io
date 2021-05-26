@@ -1,11 +1,6 @@
 <template>
-  <div>
-    <b-navbar
-      id="main-nav"
-      class="navbar is-transparent mb-4"
-      fixed-top
-      centered
-    >
+  <div id="default">
+    <b-navbar id="main-nav" class="navbar is-transparent" shadow active>
       <template #brand>
         <b-navbar-item tag="router-link" :to="{ path: '/' }">
           <img
@@ -19,7 +14,7 @@
           v-for="(item, key) of items"
           :key="key"
           :to="item.to"
-          class="navbar-item is-size-4"
+          class="navbar-item is-size-5"
           exact-active-class="is-active"
         >
           {{ item.title }}
@@ -31,6 +26,12 @@
           target="_blank"
           href="https://github.com/thomastu"
           ><b-icon :icon="'github'"
+        /></b-navbar-item>
+        <b-navbar-item
+          class="navbar-item"
+          target="_blank"
+          href="mailto:thomastu@hey.com"
+          ><b-icon :icon="'email'"
         /></b-navbar-item>
       </template>
     </b-navbar>
@@ -57,15 +58,11 @@ export default {
     return {
       items: [
         {
-          title: 'home',
-          to: { name: 'index' },
-        },
-        {
           title: 'about',
           to: { name: 'about' },
         },
         {
-          title: 'posts',
+          title: 'thoughts',
           to: { name: 'blog' },
         },
       ],
@@ -75,7 +72,11 @@ export default {
 </script>
 
 <style scoped>
-#main-nav {
-  box-shadow: 0px 2px;
+.main-content {
+  min-height: calc(100vh - 220px);
+}
+
+.footer {
+  height: 100px;
 }
 </style>

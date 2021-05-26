@@ -1,9 +1,7 @@
 <template>
-  <NuxtLink :to="`/blog/author/${author.name}`">
-    <div>
-      <p class="is-size-7">by {{ author.name }}</p>
-    </div>
-  </NuxtLink>
+  <NuxtLink class="is-size-7" :to="`/blog/author/${author.name}`"
+    ><slot /> {{ author.name }}</NuxtLink
+  >
 </template>
 
 <script>
