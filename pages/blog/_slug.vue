@@ -1,32 +1,40 @@
 <template>
-  <article class="container px-5">
+  <article class="container px-5 mt-4" style="border: 1px">
     <h1 class="title">{{ article.title }}</h1>
-    <p>Post last updated: {{ formatDate(article.updatedAt) }}</p>
+    <h2 class="subtitle">{{ article.description }}</h2>
+    <p class="is-size-7">
+      Post last updated: {{ formatDate(article.updatedAt) }}
+    </p>
+    <author :author="article.author" />
     <br />
-    <div class="toc mx-3 mb-3">
-      <section class="menu col-4">
-        <p class="menu-label">Table of Contents</p>
-        <ul class="menu-list">
-          <li v-for="link of article.toc" :key="link.id">
-            <NuxtLink
-              :to="`#${link.id}`"
-              :class="{
-                'px-4': link.depth === 2,
-                'ml-4': link.depth === 3,
-              }"
-              >{{ link.text }}</NuxtLink
-            >
-          </li>
-        </ul>
+    <div class="columns">
+      <div class="column-4 toc mx-3 mb-3 pt-4">
+        <section class="menu col-4">
+          <p class="pt-1 menu-label has-text-weight-bold">Table of Contents</p>
+          <ul class="menu-list">
+            <li v-for="link of article.toc" :key="link.id">
+              <NuxtLink
+                :to="`#${link.id}`"
+                :class="{
+                  'px-4': link.depth === 2,
+                  'ml-4': link.depth === 3,
+                }"
+                class="is-size-7"
+                >{{ link.text }}</NuxtLink
+              >
+            </li>
+          </ul>
+        </section>
+      </div>
+      <section class="column">
+        <nuxt-content
+          class="prose prose-green prose-sm mb-5"
+          :document="article"
+        />
       </section>
     </div>
-    <section>
-      <nuxt-content class="prose mb-5" :document="article" />
-    </section>
-
     <hr />
 
-    <author :author="article.author" />
     <prev-next :prev="prev" :next="next" />
   </article>
 </template>
@@ -61,6 +69,14 @@ export default {
 <style>
 .toc {
   max-width: 500px;
-  margin-left: -10px;
+  padding: 0.75rem;
+}
+
+.nuxt-content span.icon {
+  margin-left: -24px;
+}
+
+.nuxt-content img {
+  margin: auto;
 }
 </style>

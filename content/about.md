@@ -2,7 +2,7 @@ My name is Thomas Tu and this is my personal site where I sometimes post about m
 
 # I am a(n)
 
-Energy and climate geek.  Linux enthusiast.  Cat-owner.  Mediocre chess player with a crippling chess addiction.  Bay area native.
+Energy and climate geek.  Linux enthusiast.  Cat enthusiast.  Mediocre chess player despite a crippling chess addiction.  Bay area native.
 
 ## and ...
 
@@ -14,7 +14,7 @@ like any average developer, I'm strongly opinionated about things I have no busi
 
 - WebOS was way ahead of its time and was the best mobile OS ever.
 - ZuneHD was way ahead of its time and was the best music player ever.
-- Why anyone would pick MacOS or Windows over Linux is just weird.
+- More people should be using desktop Linux.
 - Tech is probably over-valued as a sector.
 - MMT is probably has it right and spending definitely precedes taxes.
 - Denying universal healthcare and tuition-free post-secondary education is making life worse for everyone, and it's weird that these are contentious ideas.
