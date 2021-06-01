@@ -11,9 +11,7 @@
     </h1>
     <h2 class="subtitle pl-8">{{ article.description }}</h2>
     <author :author="article.author"
-      ><span class="is-size-7 pl-8">
-        Last Updated on {{ formatDate(article.updatedAt) }} |
-      </span>
+      ><span class="is-size-7 pl-8"> {{ formatDate(article.date) }} | </span>
     </author>
     <br />
     <br />
@@ -45,8 +43,10 @@
           class="prose prose-green mb-5 max-w-none"
           :document="article"
         />
-
-        <div class="divider">more</div>
+        <span v-if="article.editDate" class="is-size-7 has-text-right"
+          >Updated on {{ formatDate(article.editDate) }}</span
+        >
+        <div class="divider">more posts</div>
         <prev-next class="mb-5" :prev="prev" :next="next" />
       </section>
     </div>
