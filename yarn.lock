@@ -1197,10 +1197,10 @@
     node-html-parser "^3.2.0"
     ufo "^0.7.4"
 
-"@nuxt/image@^0.4.13":
-  version "0.4.13"
-  resolved "https://registry.yarnpkg.com/@nuxt/image/-/image-0.4.13.tgz#41e5d2ff7b642e40fd867d6d62d94c8f07152d63"
-  integrity sha512-IKUlptS7AUpYLvd3r96BaFaZcjQcDJQBwuFZEzfZfk9F7Ckum/rLqc3l4RSLiX3Fhw1oDeUw2eqTftxmN8L1rA==
+"@nuxt/image@^0.4.14":
+  version "0.4.14"
+  resolved "https://registry.yarnpkg.com/@nuxt/image/-/image-0.4.14.tgz#48debb80c02d8aa98d1ef5bf2714b1845ca21fd2"
+  integrity sha512-TXZY5A458AcAj/dWcOWyUyByPNdK3phjQ5mneL3N/wLLsqYsAqb7FmZM9IhCi46Uc1LuHi1roqh9SQkZCGsBUw==
   dependencies:
     defu "^5.0.0"
     fs-extra "^10.0.0"
