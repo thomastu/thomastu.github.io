@@ -21,7 +21,7 @@
     "vue-typed-js": "^0.1.2"
   },
   "devDependencies": {
-    "@nuxt/image": "^0.6.0",
+    "@nuxt/image": "^0.6.2",
     "@nuxtjs/eslint-config": "^6.0.1",
     "@nuxtjs/eslint-module": "^3.0.2",
     "@nuxtjs/tailwindcss": "^4.1.3",
