@@ -6,15 +6,7 @@
         :to="{ name: 'blog-slug', params: { slug: article.slug } }"
       >
         <span
-          class="
-            column
-            is-three-quarters-mobile
-            is-two-fifths-tablet
-            is-one-third-desktop
-            is-one-third-widescreen
-            is-one-third-fullhd
-            py-0
-          "
+          class="column is-three-quarters-mobile is-two-fifths-tablet is-one-third-desktop is-one-third-widescreen is-one-third-fullhd py-0"
         >
           <span class="is-italic has-text-link">{{
             formatDate(article.date)

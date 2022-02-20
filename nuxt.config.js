@@ -18,7 +18,12 @@ export default {
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     script: [
-      { src: 'https://plausible.io/js/plausible.js', async: true, defer: true, "data-domain": "thomastu.io" }
+      {
+        src: 'https://plausible.io/js/plausible.js',
+        async: true,
+        defer: true,
+        'data-domain': 'thomastu.io',
+      },
     ],
   },
 

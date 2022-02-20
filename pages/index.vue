@@ -9,12 +9,7 @@
             <p>
               <br />Let's chat about
               <span
-                class="
-                  is-family-monospace
-                  has-text-weight-semibold
-                  is-uppercase
-                  typing
-                "
+                class="is-family-monospace has-text-weight-semibold is-uppercase typing"
               ></span>
             </p>
           </vue-typed-js>
