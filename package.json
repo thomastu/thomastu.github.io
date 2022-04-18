@@ -17,7 +17,7 @@
     "@tailwindcss/typography": "^0.4.1",
     "core-js": "^3.21.0",
     "nuxt": "^2.15.7",
-    "nuxt-buefy": "^0.4.4",
+    "nuxt-buefy": "^0.4.22",
     "vue-typed-js": "^0.1.2"
   },
   "devDependencies": {
