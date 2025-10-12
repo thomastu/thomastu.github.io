@@ -3,7 +3,17 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>WIP</title>
+        <meta
+            name="description"
+            content="software engineer working on climate & energy problems since 2014"
+        />
+        <meta property="og:title" content="👋 thomas tu" />
+        <meta
+            property="og:description"
+            content="software engineer working on climate & energy problems since 2014"
+        />
+        <meta property="og:type" content="website" />
+        <title>👋 thomas tu</title>
         <style>
             body {
                 font-family: monospace;
@@ -21,6 +31,10 @@
             }
             a:hover {
                 text-decoration: underline;
+            }
+            a.loading {
+                pointer-events: none;
+                cursor: default;
             }
             .github-link {
                 margin-top: 20px;
@@ -73,7 +87,7 @@
             </div>
         </div>
         <script>
-            const e = "dGhvbWFzdHVAaGV5LmNvbQ==";
+            const e = atob("ZEdodmJXRnpkSFZBYUdWNUxtTnZiUT09");
             setTimeout(() => {
                 const email = atob(e);
                 const emailLink = document.getElementById("email");
